@@ -1,0 +1,189 @@
+/*encabezado de la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: salmon;
+}
+
+
+header{
+    display: flex;
+    height: 100px;
+    background-color:rgb(0, 0, 0);
+    justify-content: space-between;
+    border: solid;
+    
+}
+
+.logo{
+    display: flex;
+    color: lightcoral;
+    height: 100px;
+}
+
+.nombre-de-la-compañia{
+    margin-left: 650px;
+    margin-top: 5px; 
+    text-shadow: 2px 2px 5px rgb(43, 43, 43);
+    font-size: 4.5rem;
+}
+
+.logo img{
+    margin-right: 20px ;
+}
+
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 5px;
+    margin-top: 100px; 
+    position:relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff6b6b;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+/* carrusel*/
+.eventos{
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    height: 100px;
+}
+
+.slider-box{
+        width: 100%;
+        max-width: 680px;
+        margin: 50px auto 0;
+        overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(240, 118, 118);
+    padding: 0 250px;
+    top: 250px;
+    color: rgb(253, 253, 253);
+}
+
+.texto h2{
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.parrafo{
+    color:lightcoral ;
+    text-shadow: 2px 2px 5px rgb(7, 7, 7);
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+/*quienes somos*/
+
+.quienes-somos {
+    padding: 60px 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.quienes-somos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.parrafo-somos{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* contacto*/
+
+.contacto-card {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+.contacto-box {
+    width: 600px;
+    margin: 0 auto;
+    background: rgb(87, 87, 87);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contacto-box h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgb(240, 118, 118);
+    font-size: 28px;
+}
+
+/*es la pierna inferior de la pagina*/
+.inferior{
+    justify-content: center;
+    border: solid;
+    background-color:rgb(0, 0, 0);
+}
+
+.nombre-derecho{
+    text-shadow: 2px 2px 5px rgb(83, 83, 83);
+    color:aliceblue;
+    margin-left: 700px;
+    margin-top: 25px; 
+    font-size: 1.5rem;
+}
+
+.social{
+    margin-left: 775px;
+    margin-top: 25px; 
+    font-size: 1.2rem;
+}
